@@ -11,4 +11,25 @@
         //name:  contact/date/location
     //map image pulled from google API*/
  
- 
+nav {
+font-family: 'Raleway', sans-serif;
+}
+
+div {
+font-family: 'Raleway', sans-serif;
+}
+
+img {
+ 	height: 300px;
+ 	width: 300px;
+ }
+
+.parent {
+	position: absolute;
+	z-index: -1;
+}
+
+.child {
+	position: relative;
+	z-index: 1;
+}
