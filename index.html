@@ -9,14 +9,19 @@
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
  	<!-- Our custom CSS style sheet -->
  	<link reL="stylesheet" href="assets/css/style.css">
+		<!-- font -->
+ 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
  	</head>
  
  <body>
 
  <nav>For the Heart of It</nav>
 
- <div id="image">
+ <div id="container">
+ 	<img class="parent" src="assets/images/search-image.png" alt="heart image">
  	<!-- this will take us to our sub page -->
+  
+ 	<div class="child">
  	<div class="dropdown">
   		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Search Category<span class="caret"></span></button>
 		<ul class="dropdown-menu">
@@ -33,11 +38,13 @@
     	<input type="email" class="form-control" id="city-input" placeholder="City">
   	</div>
  	<button id="search-submit"></button>
+ 	</div>
+
  </div>
 
  <div id="search-results"></div>
 
- <div id="span">Featured Local Opportunities</div>
+ <div>Featured Local Opportunities</div>
 
  <footer></footer>
 
