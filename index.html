@@ -1,9 +1,13 @@
 <!DOCTYPE html>
  <html>
  	<head>
+ 		<!-- Favicon -->
+ 		<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
  		<title>For the Heart of It</title>
+ 	<!-- Bootstrap -->
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
- 	<link rel="stylesheet" href="assets/css/reset.css">
+ 	<!-- Our custom CSS style sheet -->
  	<link reL="stylesheet" href="assets/css/style.css">
 		<!-- font -->
  	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -16,11 +20,26 @@
  <div id="container">
  	<img class="parent" src="assets/images/search-image.png" alt="heart image">
  	<!-- this will take us to our sub page -->
+  
  	<div class="child">
- 		<button id="search-category"></button>
- 		<button id="search-city"></button>
- 		<button id="search-submit"></button>
+ 	<div class="dropdown">
+  		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Search Category<span class="caret"></span></button>
+		<ul class="dropdown-menu">
+			<li><a href="#">Charity Event</a></li>
+		    <li><a href="#">Community</a></li>
+		    <li><a href="#">Community Building</a></li>
+		    <li><a href="#">Community Services</a></li>
+		    <li><a href="#">Nonprofit</a></li>
+		    <li><a href="#">People Helping People</a></li>
+		    <li><a href="#">Volunteering</a></li>
+		</ul>
+	</div>
+ 	<div class="form-group">
+    	<input type="text" class="form-control" id="city-input" placeholder="City">
+  	</div>
+ 	<button id="search-submit"></button>
  	</div>
+
  </div>
 
  <div id="search-results"></div>
@@ -29,7 +48,7 @@
 
  <footer></footer>
 
-
+<!-- jQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<!-- Firebase Link
