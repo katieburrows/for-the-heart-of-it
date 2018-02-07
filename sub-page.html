@@ -1,7 +1,6 @@
 <!DOCTYPE html>
  <html>
  	<head>
- 		<title>Volunteer Information Page</title>
  		<!-- Favicon -->
  		<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
  		<title>For the Heart of It</title>
@@ -13,48 +12,50 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 		<!-- Bootstrap Latest compiled and minified JavaScript -->
  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	 	<!-- Our Modal JavaScript file -->
-		<script type="text/javascript" src="modal.js"></script>
-		<!-- Our API Javascript file -->
-		<script type="text/javascript" src="script.js"></script>
-	 	<!-- Our custom CSS style sheet -->
+
+ 		<!-- Firebase Link -->
+		<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+ 		<!-- Email Collect JavaScript file -->
+ 		<script type="text/javascript" src="email-collect.js"></script>
+ 		<!-- Our custom style sheet -->
 	 	<link reL="stylesheet" href="assets/css/style.css">
 		<!-- font -->
 	 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
  	</head>
  
  <body>
+ 	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">For the Heart of it</a>
+	    </div>
+	  </div>
+	</nav>
 
- <nav>For the Heart of It</nav>
-<!-- This div will include the name/contact/date/location re: vol op. -->
-<div class="container">
-	<div class="panel panel-danger">
-		<div class="panel-heading">
-	    	<h3 class="panel-title">Your Volunteer Opportunity</h3>
-		</div>
-	  	<div class="panel-body" id="name">Event Name</div>
-	  	<div class="panel-body" id="venue">Venue (location address)</div>
-	  	<div class="panel-body" id="description">Description</div>
-	  	<div class="panel-body" id="url">Event URL</div>
-	</div>
+	<form class="form-horizontal" id="contactform">
+	  <div class="form-group">
+	    <label for="inputName" class="col-sm-2 control-label">Name</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" id="name-input" placeholder="Jane Doe">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+	    <div class="col-sm-10">
+	      <input type="email" class="form-control" id="email-input" placeholder="jane.doe@example.com">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <div class="col-sm-offset-2 col-sm-10">
+	      <button type="submit" class="btn btn-default">Sign Up</button>
+	    </div>
+	  </div>
+	</form>
 
-	<div id="map">Google Map</div>
-</div>
+	
 
+</body>
 
- 
-
- <footer></footer>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-	<!-- Firebase Link
-<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> -->
-
-<script src="meetup.js"></script>
-
-
- </body>
- 
- </html>
+</html>
