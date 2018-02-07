@@ -18,18 +18,41 @@ font-family: 'Raleway', sans-serif;
 div {
 font-family: 'Raleway', sans-serif;
 }
-
-img {
- 	height: 300px;
- 	width: 300px;
- }
-
 .parent {
 	position: absolute;
 	z-index: -1;
 }
 
-.child {
+#child {
 	position: relative;
+    text-align: center;
 	z-index: 1;
+    margin-bottom: 75px;
+
+}
+
+#container {
+    background-size: 600px 600px;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-position: center;
+    padding: 150px 200px 150px 200px;
+    background-image: url(../images/search-image.png)
+}
+.btn-primary {
+    margin-bottom: 15px;
+}
+.dropdown {
+    width: 400px;
+    display: inline-block;
+    text-align: center;
+}
+.form-control {
+    width: 250px;
+    display: inline-block;
+    text-align: center;
+}
+#search-submit {
+    width: 70px;
+    height: 34px;
 }
