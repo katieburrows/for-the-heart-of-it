@@ -14,7 +14,7 @@ body {
 
 } 
 
-nav {
+nav {.
 font-family: 'Raleway', sans-serif;
 }
 nav + div {
@@ -60,6 +60,7 @@ nav + div {
 }
 .btn-primary {
     margin-bottom: 15px;
+    background-color: #b62f2f;
 }
 .dropdown {
     width: 400px;
@@ -85,5 +86,5 @@ nav + div {
 #search-results {
     background-color: pink;
     width: 400px;
-    margin
+    margin-left: 450px;
   }
