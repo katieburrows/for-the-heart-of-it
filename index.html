@@ -8,6 +8,8 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	 	<!-- Bootstrap -->
 	 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	 	<!-- Bootstrap - Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 		<!-- Bootstrap Latest compiled and minified JavaScript -->
  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	 	<!-- Our JavaScript file -->
@@ -19,10 +21,6 @@
  	</head>
  
  <body>
-
- <nav>For the Heart of It</nav>
-
- <div id="container">
  	<!-- Modal pop up to sign-up -->
 	<div class="modal fade delayedPopup" id="openModal">
 	  <div class="modal-dialog">
@@ -47,7 +45,11 @@
 	    </div>
 	  </div>
 	</div>
-	
+ <nav>For the Heart of It</nav>
+
+ <div id="container">
+
+
  	<img class="parent" src="assets/images/search-image.png" alt="heart image">
  	<!-- this will take us to our sub page -->
   
@@ -72,44 +74,11 @@
 
  </div>
 
- <!-- Modal to sign-up -->
- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Sign-up for emails</button>
-
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">Email Sign-up</h4>
-      </div>
-      <div class="modal-body">
-        <form class="form-inline">
-			<div class="form-group">
-		    	<label for="exampleInputName2">Name</label>
-		    	<input type="text" class="form-control" id="name-input" placeholder="Jane Doe">
-			</div>
-			<div class="form-group">
-		    	<label for="exampleInputEmail2">Email</label>
-		    	<input type="email" class="form-control" id="email-input" placeholder="jane.doe@example.com">
-			</div>
-		</form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
-      </div>
-    </div>
-  </div>
-</div>
-
  <div id="search-results"></div>
 
  <div>Featured Local Opportunities</div>
 
  <footer></footer>
-
-<!-- jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<!-- Firebase Link
 <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> -->
