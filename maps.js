@@ -4,7 +4,7 @@
       var myLon = (response.data.lon);
       var myAddress = (response.data.address_1, response.data.city, response.data.state)
 
-    $("#address").html(myaddress);
+    $("#address").html(myAddress);
 
       function initMap() {
         var location = {lat: myLat, lng: myLon};
