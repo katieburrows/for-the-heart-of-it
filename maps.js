@@ -18,7 +18,7 @@
         });
       }
  
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjdLWylDJt3INqwrSBnWkN46bmgGJZRz0&callback=initMap">
-    </script>
+    // <script async defer
+    // src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjdLWylDJt3INqwrSBnWkN46bmgGJZRz0&callback=initMap">
+    // </script>
 
