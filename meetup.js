@@ -64,12 +64,12 @@ $(".categories").on("click", function(){
           var newTR = $("<tr>")
 
           var group = results[i].group.name
-          var group = results[i].venue.city
+          var city = results[i].venue.city
 
-          var newTDs = $("<td><a class='event' href='#'>" + response.group + "</a></td><td>" + response.city + "</td>");
+          var newTDs = $("<td>" + group + "</a></td><td>" + city + "</td>");
           newTR.append(newTDs);
 
-          $("#eventTable tbody").append(newTR);
+          $("#search-results").append(newTR);
         }
 
 
