@@ -66,7 +66,7 @@ $(".categories").on("click", function(){
           var group = results[i].group.name
           var city = results[i].venue.city
 
-          var newTDs = $("<td><a class='event' href='#'>" + group + "</a></td><td>" + city + "</td>");
+          var newTDs = $("<td>" + group + "</a></td><td>" + city + "</td>");
           newTR.append(newTDs);
 
           $("#search-results").append(newTR);
