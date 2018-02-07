@@ -39,47 +39,39 @@ $(".categories").on("click", function(){
       $('#zip-input').empty();
 
       // loop through results; response.data is an array
-      for (var i = 0; i < results.length; i++) {
+      // for (var i = 0; i < results.length; i++) {
 
-        var holder = $("<div>")
+      //   var holder = $("<div>")
 
 
-        var group = results[i].group.name
-        var address = results[i].venue.address_1
-        var url = results[i].event_url
-        var description = results[i].description
+      //   var group = results[i].group.name
+      //   var address = results[i].venue.address_1
+      //   var url = results[i].event_url
+      //   var description = results[i].description
         
 
-        holder.append(group)
-        holder.append(address)
-        holder.append(url)
-        holder.append(description)
+      //   holder.append(group)
+      //   holder.append(address)
+      //   holder.append(url)
+      //   holder.append(description)
 
 
-        $("#search-results").append(holder)
+      //   $("#search-results").append(holder)
+        
+      // }
 
+        for (var i = 0; i < results.length; i++) {
+          var newTR = $("<tr>")
 
-        // var eventPageDiv = $('<div "#search-results"">')
-        // var nameDiv = $('<div class ="panel-body">');
-        // var venueDiv = $('<div class ="panel-body">');
-        // var description = results[i].description
-        // var p = $('<p class ="">').text("Event Description: " + description);
-        // var eventUrl = $('<a class="panel-body" href='+ eventUrl);
+          var group = results[i].group.name
+          var group = results[i].venue.city
 
-        // $(eventPageDiv).attr({
-        //   src: results[i].group.name,
-        //   src: srcresults[i].venue.address_1,
-        //   src: results[i].event_url,
+          var newTDs = $("<td><a class='event' href='#'>" + response.group + "</a></td><td>" + response.city + "</td>");
+          newTR.append(newTDs);
 
+          $("#eventTable tbody").append(newTR);
+        }
 
-        // })
-
-        // // add event name, location, description, & URL 
-        // eventPageDiv.append(nameDiv);
-        // eventPageDiv.append(venueDiv);
-        // eventPageDiv.append(p);
-        // eventPageDiv.append(eventUrl);
-      }
 
     });
     } else {

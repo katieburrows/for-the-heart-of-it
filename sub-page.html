@@ -2,9 +2,25 @@
  <html>
  	<head>
  		<title>Volunteer Information Page</title>
- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
- 	<link rel="stylesheet" href="assets/css/reset.css">
- 	<link reL="stylesheet" href="assets/css/style.css">
+ 		<!-- Favicon -->
+ 		<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+ 		<title>For the Heart of It</title>
+ 		<!-- jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 	<!-- Bootstrap -->
+	 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	 	<!-- Bootstrap - Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<!-- Bootstrap Latest compiled and minified JavaScript -->
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	 	<!-- Our Modal JavaScript file -->
+		<script type="text/javascript" src="modal.js"></script>
+		<!-- Our API Javascript file -->
+		<script type="text/javascript" src="script.js"></script>
+	 	<!-- Our custom CSS style sheet -->
+	 	<link reL="stylesheet" href="assets/css/style.css">
+		<!-- font -->
+	 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
  	</head>
  
  <body>
@@ -16,10 +32,10 @@
 		<div class="panel-heading">
 	    	<h3 class="panel-title">Your Volunteer Opportunity</h3>
 		</div>
-	  	<div class="panel-body">Event Name</div>
-	  	<div class="panel-body">Venue (location address)</div>
-	  	<div class="panel-body">Description</div>
-	  	<div class="panel-body">Event URL</div>
+	  	<div class="panel-body" id="name">Event Name</div>
+	  	<div class="panel-body" id="venue">Venue (location address)</div>
+	  	<div class="panel-body" id="description">Description</div>
+	  	<div class="panel-body" id="url">Event URL</div>
 	</div>
 
 	<div id="map">Google Map</div>
@@ -36,7 +52,7 @@
 	<!-- Firebase Link
 <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script> -->
 
-<script src="script.js"></script>
+<script src="meetup.js"></script>
 
 
  </body>
