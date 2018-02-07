@@ -10,13 +10,31 @@
     //volunteer opportunity info
         //name:  contact/date/location
     //map image pulled from google API*/
- 
+body {
+
+} 
+
 nav {
 font-family: 'Raleway', sans-serif;
 }
-
-div {
-font-family: 'Raleway', sans-serif;
+nav + div {
+    background-image: url(../images/wood-textures/grain3.jpg);
+}
+.container-fluid {
+    background: #A52A2A;
+}
+.navbar-default {
+    margin-bottom: 0px;
+}
+.navbar-brand {
+    font-size: 40px;
+}
+#featured-opportunities {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    background-color: gray;
+    width: 400px;
+    margin-left: 425px;
 }
 .parent {
 	position: absolute;
@@ -37,7 +55,8 @@ font-family: 'Raleway', sans-serif;
     /*background-attachment: fixed;*/
     background-position: center;
     padding: 150px 200px 150px 200px;
-    background-image: url(../images/search-image.png)
+    background-image: url(../images/search-image.png);
+    /* background-color: #ffbb99 */
 }
 .btn-primary {
     margin-bottom: 15px;
@@ -55,4 +74,16 @@ font-family: 'Raleway', sans-serif;
 #search-submit {
     width: 70px;
     height: 34px;
-}
+} 
+#footer {
+  padding: 30px 0;
+  clear: both;
+  font-size: 20px;
+  text-align: center;
+  background: #A52A2A;
+  }
+#search-results {
+    background-color: pink;
+    width: 400px;
+    margin
+  }
