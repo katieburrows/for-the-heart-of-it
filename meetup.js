@@ -108,7 +108,7 @@ $(".categories").on("click", function(){
       $(() => {
         var location = {lat: singleLat, lng: singleLon};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 17,
+          zoom: 12,
           center: location
         });
         var marker = new google.maps.Marker({
