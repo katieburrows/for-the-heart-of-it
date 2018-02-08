@@ -126,7 +126,9 @@ body {
     color: #999;
     border-radius: 3px;
     border-color: gray;
-} .btn-default {
+} 
+
+.btn-default {
     width: 70px;
     height: 34px;`
     background-color: red;
@@ -191,6 +193,6 @@ footer {
 }
 .email {
     font-size: 25px;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: -20px
 }
