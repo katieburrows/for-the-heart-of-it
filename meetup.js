@@ -24,6 +24,8 @@ $(".categories").on("click", function(){
   $("#search-submit").on("click", function(event) {
     event.preventDefault();
 
+    $(this).attr('class', "animated fadeOut")
+
     // This line grabs the input from the zip textbox
     var zip = $("#zip-input").val().trim();
 
@@ -39,7 +41,7 @@ $(".categories").on("click", function(){
     }).then(function(response) {
       // console.log(response);
       results = response.results;
-
+      $("#search-submit").attr('class', "animated fadeIn")
       console.log(results)
 
       // clear both search boxes

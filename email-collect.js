@@ -29,5 +29,7 @@ $(document).ready(function () {
 		// Clear text-input boxes
 		$("#name-input").val("");
 		$("#email-input").val("");
+
+		alert("New user has been added.")
 	});
 })

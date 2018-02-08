@@ -12,8 +12,10 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 		<!-- Bootstrap Latest compiled and minified JavaScript -->
  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 		<!-- Animate.css -->
+ 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	 	<!-- Our Modal JavaScript file -->
-		<!-- <script type="text/javascript" src="modal.js"></script> -->
+		<script type="text/javascript" src="loading.js"></script>
 		<!-- Our API Javascript file -->
 		<script type="text/javascript" src="meetup.js"></script>
 	 	<!-- Our custom CSS style sheet -->
@@ -33,6 +35,8 @@
 	  <div class="container-fluid">
 	    <div class="navbar-header">
 	      <a class="navbar-brand" href="index.html">For the Heart of it</a>
+
+
 	    </div>
 	      <ul class="nav navbar-nav navbar-right">
         	<li><a class="email" href="sub-page.html">Email Signup</a></li>
@@ -40,51 +44,19 @@
 	    </div>
 	</nav>
  <div>
-
- 	 
-
-<!-- <div id="htmlMap" style="height: 300px"></div>
-
- 	<script>
-	
-
-
-
-function initMap() {
-        var location = {lat: 40.008731, lng: -105.230420};
-        var map = new google.maps.Map(document.getElementById('htmlMap'), {
-          zoom: 17,
-          center: location
-        });
-        var marker = new google.maps.Marker({
-          position: location,
-          map: map
-        });
-    }
-
-
-</script> -->
-
+	<div id="about">
+		<h1>About For the Heart of It</h1>
+			<p>Find local Meetup groups that participate in COMMUNITY ENGAGEMENT/OUTREACH? to attend which are sorted by city.  Do this by simply putting your zip code in the form below.</p>
+	</div>
+ 
  <div id="container">
  	<div id="child">
- <!-- 	<div class="dropdown">
-  		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> Search Category <span class="caret"> </span> </button>
-		<ul class="dropdown-menu">
-			<li><a class="categories" data-cat="Charity Event">Charity Event</a></li>
-		    <li><a class="categories" data-cat="Community">Community</a></li>
-		    <li><a class="categories" data-cat="Community Building">Community Building</a></li>
-		    <li><a class="categories" data-cat="Community Services">Community Services</a></li>
-		    <li><a class="categories" data-cat="Nonprofit">Nonprofit</a></li>
-		    <li><a class="categories" data-cat="People Helping People">People Helping People</a></li>
-		    <li><a class="categories" data-cat="Volunteering">Volunteering</a></li>
-		</ul>
-	</div> -->
  	<div class="form-group">
     	<input type="text" class="form-control" id="zip-input" placeholder="zip">
   	</div>
+
  
- 	
-		<button id="search-submit" type="submit">Submit</button>
+ 	<button id="search-submit" type="submit">Submit</button>
  	</div>
 
  </div>
@@ -111,17 +83,6 @@ function initMap() {
 			</div>
 </div>
 
-<!-- <div id="featured-opportunities">Featured Local Opportunities</div>
-<div id="search-results">
-	<table style="width:100%">
-	  		<tr>
-	    		<th>Group Name</th>
-	    		<th>City</th>  -->
-	    		<!-- Button trigger modal -->
-	    	<!-- 	<th>  -->
-    			
-    		
-
 
 	<!-- Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -147,16 +108,13 @@ function initMap() {
 	    </div>
 	  </div>
 	</div>
-  		
-	</table>
-</div>
-
-
-
 
  <div id="footer">
       For the Heart of It
     </div>
+
+ <footer>
+      For the Heart of It &hearts; A Project by Hunger Bytes	
   </footer>
 
 <!-- Firebase Link -->
