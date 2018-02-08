@@ -8,7 +8,7 @@
     background-color: gray;
     width: 600px;
     height: 100px;
-    margin-left: 325px;
+    margin: auto;
     margin-bottom: 30px;
 }
 h1 {
@@ -119,14 +119,16 @@ body {
 ::input-placeholder { /* Chrome/Opera/Safari */
  color: pink;
 }
-#search-submit {
+#search-submit #email-submit {
     width: 70px;
     height: 34px;
     background-color: #777;
     color: #999;
     border-radius: 3px;
     border-color: gray;
-} .btn-default {
+} 
+
+.btn-default {
     width: 70px;
     height: 34px;`
     background-color: red;
@@ -191,6 +193,6 @@ footer {
 }
 .email {
     font-size: 25px;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: -20px
 }
