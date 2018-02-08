@@ -23,6 +23,7 @@
 	 	<link reL="stylesheet" href="assets/css/style.css">
 		<!-- font -->
 	 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
  	</head>
  
  <body>
@@ -36,28 +37,19 @@
 	      <a class="navbar-brand" href="index.html">For the Heart of it</a>
 
 
-
-
-
-
 	    </div>
 	      <ul class="nav navbar-nav navbar-right">
         	<li><a class="email" href="sub-page.html">Email Signup</a></li>
           </ul>
 	    </div>
 	</nav>
-
  <div>
-
 	<div id="about">
 		<h1>About For the Heart of It</h1>
 			<p>Find local Meetup groups that participate in COMMUNITY ENGAGEMENT/OUTREACH? to attend which are sorted by city.  Do this by simply putting your zip code in the form below.</p>
 	</div>
  
  <div id="container">
-
-
-
  	<div id="child">
  	<div class="form-group">
     	<input type="text" class="form-control" id="zip-input" placeholder="zip">
@@ -80,7 +72,7 @@
 					  	<thead class="search-results-head">
 						    <tr>
 						       	<th scope="col">Event Name</th>
-						       	<th scope="col">City</th>
+						       	<!-- <th scope="col">City</th> -->
 							    <th scope="col">More Info</th>
 						    </tr>
 					   	</thead>
@@ -90,18 +82,6 @@
 				</div>
 			</div>
 </div>
-
-<!-- <div id="featured-opportunities">Featured Local Opportunities</div>
-<div id="search-results">
-	<table style="width:100%">
-
-	  		<tr>
-	    		<th>Group Name</th>
-	    		<th>City</th>  -->
-	    		<!-- Button trigger modal -->
-	    	<!-- 	<th> <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal">More info</button></th> -->
-    			
-    		
 
 
 	<!-- Modal -->
@@ -113,36 +93,40 @@
 	        <h4 class="modal-title" id="myModalLabel">Group Name</h4>
 	      </div>
 	      <div class="modal-body">
+
+	      <div id="map" style="height: 300px"></div>
 	      <!-- More info -->
-	      <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus porta urna, quis luctus odio consequat et. Vivamus elementum pulvinar turpis, eu aliquet diam faucibus.</p>
-	      <p><a href="https://www.w3schools.com/html/">Visit Event Website</a></p>
+	      <p id="groupUrl">fggguugy</p>
+	      <!-- <p><a href="https://www.w3schools.com/html/">Visit Event Website</a></p> -->
 	      <p id="venue">Location address</p>
 	      <hr>
 	      <!-- Map -->
 	      <div class="map"></div>
 	      </div>
-	      <div class="modal-footer">
-	      </div>
+	     <!--  <div class="modal-footer">
+	      </div> -->
 	    </div>
 	  </div>
 	</div>
 
-  		
-<!-- 	</table> -->
-<!-- come back here -->
-<!-- </div> -->
-
-
- <div id="featured-opportunities">Featured Local Opportunities</div>
+ <div id="footer">
+      For the Heart of It
+    </div>
 
  <footer>
-      For the Heart of It &hearts; A Project by Hunger Bytes
+      For the Heart of It &hearts; A Project by Hunger Bytes	
   </footer>
 
 <!-- Firebase Link -->
 <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
 
+
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjdLWylDJt3INqwrSBnWkN46bmgGJZRz0&callback=initMap">
+    </script>
 <script type="text/javascript" src="meetup.js"></script>
+
 
 
  </body>

@@ -1,9 +1,17 @@
      // COORS CODE 
+    
+
+  // Handler for .ready() called.
+
+function initMap() {}
+
+
     jQuery.ajaxPrefilter(function(options) {
     if (options.crossDomain && jQuery.support.cors) {
         options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
     }
   });
+
 
   var category = "community";
 
@@ -21,7 +29,7 @@ $(".categories").on("click", function(){
     // This line grabs the input from the zip textbox
     var zip = $("#zip-input").val().trim();
 
-    if (category != "" && zip != "") {
+    // if (category != "" && zip != "") {
      var key = "1b271629571b22b797a713d217841";
     var queryURL = "https://api.meetup.com/2/open_events?&sign=true&photo-host=public&country=United States&topic=" + category + "&zip=" + zip + "&state=CO&page=20&key=" + key ;
     console.log(queryURL)
@@ -30,7 +38,7 @@ $(".categories").on("click", function(){
     $.ajax({
       url: queryURL,
       method: 'GET'
-    }).done(function(response) {
+    }).then(function(response) {
       // console.log(response);
       results = response.results;
       $("#search-submit").attr('class', "animated fadeIn")
@@ -44,40 +52,84 @@ $(".categories").on("click", function(){
     for (var i = 0; i < results.length; i++) {
 
           var group = results[i].group.name
-          var city = results[i].venue.city
+          // var city = results[i].venue.city
           var url = results[i].event_url
 
-    $('#search-results').append(
-      '<tr>'+
+          console.log(url)
+          var lat = results[i].group.group_lat
+          var lon = results[i].group.group_lon
+          var desc = results[i].description
+          var add = results[i].venue.address_1
+        $('#search-results').append(
+        '<tr>'+
         // '<th scope="row">' + results + '</th>' +
         '<td>' + group + '</td>' +
-        '<td>' + city + '</td>' +
-        '<td>' + url + '</td>' +
+        // '<td>' + city + '</td>' +
+        '<td><button class="more-info" data-lat="' + lat + '" data-lon="' + lon + '" data-group="' + group + '" data-url="' + url + '" data-add="' + add + ' "data-toggle="modal" data-target="#myModal">More Info</button</td>' +
       '</tr>'
       );
+
+ 
+    
   }
 
+    })
 
-
-        // for (var i = 0; i < results.length; i++) {
-        //   var newTR = $("<tr>")
-
-        //   var group = results[i].group.name
-        //   var city = results[i].venue.city
-
-        //   var newTDs = $("<td>" + group + "</a></td><td>" + city + "</td>");
-        //   newTR.append(newTDs);
-
-        //   $("#search-results").append(newTR);
-        // }
       
 
+
+  $(document).on('click', ".more-info", function(){
+
+
+
+    var groupName  = $(this).attr("data-group")
+    $("#myModalLabel").html(groupName)
+
+    var groupUrl  = $(this).attr("data-url")
+    console.log(groupUrl)
+    $("#groupUrl").html(`Sign Up at this link: <a target="_blank" href="${groupUrl}">${groupName}</a>`)
+
+
+    // $("#groupUrl").html('Sign Up at this link: <a href=' + groupUrl + >Link name</a>')
+
+    var add  = $(this).attr("data-add")
+    $("#venue").html(add)
+
+
+      var singleLat = parseInt($(this).attr("data-lat"))
+
+      var singleLon  = parseInt($(this).attr("data-lon"))
+
+
+
+
+         
+
+      $(() => {
+        var location = {lat: singleLat, lng: singleLon};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: location
+        });
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map
+        });
+      
+})
+
+  })
+
+
+$("#myModal").on("shown.bs.modal", function () {
+    google.maps.event.trigger(map, "resize");
+});
+
+
+
+
     });
-    } else {
-      // jQuery's .show() automatically shows something, which overrides the css's 'display: none'... the opposite of .show() is (you guessed it!) .hide()
-      $(".formError").show();
-      return false;
-    }
+  
     
 
-  });
+
