@@ -24,7 +24,6 @@
  
  <body>
 
-
  <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -40,8 +39,7 @@
   </div>
 </nav>
 
- <div>
-
+<div>
  	<!-- Modal pop up to sign-up -->
 	<div class="modal fade delayedPopup" id="openModal">
 	  <div class="modal-dialog">
@@ -69,31 +67,12 @@
 
 
  <div id="container">
-
-
- 	
-
-
-  
- 	<div id="child">
- 	<div class="dropdown">
-  		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> Search Category <span class="caret"> </span> </button>
-		<ul class="dropdown-menu">
-			<li><a class="categories" data-cat="Charity Event">Charity Event</a></li>
-		    <li><a class="categories" data-cat="Community">Community</a></li>
-		    <li><a class="categories" data-cat="Community Building">Community Building</a></li>
-		    <li><a class="categories" data-cat="Community Services">Community Services</a></li>
-		    <li><a class="categories" data-cat="Nonprofit">Nonprofit</a></li>
-		    <li><a class="categories" data-cat="People Helping People">People Helping People</a></li>
-		    <li><a class="categories" data-cat="Volunteering">Volunteering</a></li>
-		</ul>
-	</div>
- 	<div class="form-group">
-    	<input type="text" class="form-control" id="zip-input" placeholder="zip">
-  	</div>
+	<div id="child">
+ 		<div class="form-group">
+    		<input type="text" class="form-control" id="zip-input" placeholder="zip">
+  		</div>
  
- 	
-		<button id="search-submit" type="submit">Submit</button>
+ 	<button id="search-submit" type="submit">Submit</button>
  	</div>
 
  </div>
@@ -103,7 +82,7 @@
   		<tr>
     		<th>Group Name</th>
     		<th>City</th> 
-    		<th>More Info</th>
+    		<th id ="more-info-btn"></button>More Info</th>
    <!--  button to modal -->
   		
 	</table>
@@ -111,9 +90,8 @@
 
  <div id="featured-opportunities">Featured Local Opportunities</div>
 
- <div id="footer">
+ <footer>
       For the Heart of It
-    </div>
   </footer>
 
 	<!-- Firebase Link
