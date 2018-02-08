@@ -1,15 +1,4 @@
-/*
-//main page
-    //header/nav
-    //img background box w/search field inside
-    //featured local opportunities
-    //footer
 
-//sub page
-    //header/nav
-    //volunteer opportunity info
-        //name:  contact/date/location
-    //map image pulled from google API*/
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -19,9 +8,11 @@
     background-color: gray;
     width: 600px;
     margin-left: 325px;
+    margin-bottom: 30px;
 }
 h1 {
     text-decoration: underline;
+    margin-top: -15px;
 }
 
 #venue {
@@ -42,15 +33,19 @@ color: #333;
 nav + div {
     background-image: url(../images/wood-textures/grain3.jpg);
     padding-top: 20px;
+}
 
+body {
+    background-image: url(../images/wood-textures/grain3.jpg);
 }
 
 .container-fluid {
     background: #A52A2A;
     color: #333;
+    padding-bottom: 30px;
 }
 .navbar-default {     
-    margin-bottom: 0px;
+   /* margin-bottom: 20px;*/
     border-color: #A52A2A;
     border-radius: 0px;
     width: 100%;
@@ -64,6 +59,7 @@ nav + div {
 .navbar-default .navbar-brand {
     color: #333;
     text-transform: uppercase;
+    padding-top: 30px;
 }
 
 #featured-opportunities {
@@ -125,7 +121,14 @@ nav + div {
     color: #999;
     border-radius: 3px;
     border-color: gray;
-} 
+} .btn-default {
+    width: 70px;
+    height: 34px;
+    background-color: red;
+    color: #999;
+    border-radius: 3px;
+    border-color: gray;
+}
 footer {
 /*  Makes footer sticky
   position: fixed;
@@ -137,6 +140,7 @@ footer {
   text-align: center;
   background: #A52A2A;
   font-family: 'Raleway', sans-serif;
+  margin-top: 20px;
 }
 
 #search-results {
@@ -145,7 +149,7 @@ footer {
     width: 800px;
     margin-left: 200px;
     font-family: 'Raleway', sans-serif;
-    color: #333;
+    color: top: -30px;
 }
 #more-info-btn {
 
@@ -179,4 +183,9 @@ footer {
 }
 .table {
     border-radius: 10px;
+}
+.email {
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: -20px
 }
