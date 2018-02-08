@@ -114,6 +114,10 @@ nav + div {
     border-radius: 3px;
 } 
 footer {
+/*  Makes footer sticky
+  position: fixed;
+  bottom: 0;
+  width: 100%;*/
   padding: 30px 0;
   clear: both;
   font-size: 20px;
