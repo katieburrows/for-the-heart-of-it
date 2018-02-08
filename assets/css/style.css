@@ -99,7 +99,7 @@ body {
 .btn-primary {
     margin-bottom: 15px;
     background-color: #7C2F30;
-    color: #333;
+    color: #111;
 }
 .dropdown {
     width: 400px;
@@ -111,8 +111,9 @@ body {
     width: 250px;
     display: inline-block;
     text-align: center;
-    background-color: #777;
+    background-color: LightGray;
     border-color: gray;
+    color: #111;
 }
 #search-submit {
     width: 70px;
