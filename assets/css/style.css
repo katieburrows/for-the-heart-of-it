@@ -10,9 +10,10 @@
     //volunteer opportunity info
         //name:  contact/date/location
     //map image pulled from google API*/
-body {
-
-} 
+.center {
+    display: flex;
+    justify-content: center;
+}
 
 nav {.
 font-family: 'Raleway', sans-serif;
@@ -50,7 +51,7 @@ nav + div {
 }
 
 #container {
-    background-size: 600px 600px;
+    background-size: auto 600px;
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
     background-position: center;
