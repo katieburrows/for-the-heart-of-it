@@ -30,16 +30,27 @@ nav + div {
 }
 .navbar-default {
     margin-bottom: 0px;
+    color: white;
 }
 .navbar-brand {
     font-size: 40px;
+    color: white;
 }
+
+.navbar-default .navbar-brand {
+    color: white;
+    text-transform: uppercase;
+}
+
 #featured-opportunities {
     font-family: 'Raleway', sans-serif;
     text-align: center;
     background-color: gray;
-    width: 400px;
-    margin-left: 425px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+   /* margin-left: 425px;*/
 }
 .parent {
 	position: absolute;
@@ -87,9 +98,27 @@ nav + div {
   font-size: 20px;
   text-align: center;
   background: #A52A2A;
+  color: white;
   }
+
 #search-results {
-    background-color: pink;
-    width: 400px;
-    margin-left: 450px;
+    background-color: white;
+    width: 100%;
+    margin: auto 0;
   }
+
+.schedule-header {
+    background-color: #A52A2A !important;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    width: 
+}
+
+.container {
+    background-color: white;
+    margin-top: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
+}

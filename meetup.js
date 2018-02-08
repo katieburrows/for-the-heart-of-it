@@ -28,50 +28,47 @@ $(".categories").on("click", function(){
     $.ajax({
       url: queryURL,
       method: 'GET'
-    }).then(function(response) {
+    }).done(function(response) {
       // console.log(response);
       results = response.results;
 
       console.log(results)
 
       // clear both search boxes
-      $('#search-submit').empty();
-      $('#zip-input').empty();
-
-      // loop through results; response.data is an array
-      // for (var i = 0; i < results.length; i++) {
-
-      //   var holder = $("<div>")
-
-
-      //   var group = results[i].group.name
-      //   var address = results[i].venue.address_1
-      //   var url = results[i].event_url
-      //   var description = results[i].description
+      // $('#search-submit').empty();
+        $('#zip-input').empty();
         
 
-      //   holder.append(group)
-      //   holder.append(address)
-      //   holder.append(url)
-      //   holder.append(description)
-
-
-      //   $("#search-results").append(holder)
-        
-      // }
-
-        for (var i = 0; i < results.length; i++) {
-          var newTR = $("<tr>")
+    for (var i = 0; i < results.length; i++) {
 
           var group = results[i].group.name
           var city = results[i].venue.city
+          var url = results[i].event_url
 
-          var newTDs = $("<td>" + group + "</a></td><td>" + city + "</td>");
-          newTR.append(newTDs);
+    $('#search-results').append(
+      '<tr>'+
+        // '<th scope="row">' + results + '</th>' +
+        '<td>' + group + '</td>' +
+        '<td>' + city + '</td>' +
+        '<td>' + url + '</td>' +
+      '</tr>'
+      );
+  }
 
-          $("#search-results").append(newTR);
-        }
 
+
+        // for (var i = 0; i < results.length; i++) {
+        //   var newTR = $("<tr>")
+
+        //   var group = results[i].group.name
+        //   var city = results[i].venue.city
+
+        //   var newTDs = $("<td>" + group + "</a></td><td>" + city + "</td>");
+        //   newTR.append(newTDs);
+
+        //   $("#search-results").append(newTR);
+        // }
+      
 
     });
     } else {
@@ -79,12 +76,6 @@ $(".categories").on("click", function(){
       $(".formError").show();
       return false;
     }
-    // The city from the textbox is then added to our array
-    // topics.push(city);
-
-    // city = $("#city-input").val('');
-
-    // // Calling renderButtons which handles the processing of city array
-    // renderButtons();
+    
 
   });

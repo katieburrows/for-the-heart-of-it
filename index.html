@@ -32,7 +32,7 @@
 	      <a class="navbar-brand" href="index.html">For the Heart of it</a>
 	    </div>
 	      <ul class="nav navbar-nav navbar-right">
-        	<li><a href="sub-page.html">Email Signup</a></li>
+        	<li><a class="email" href="sub-page.html">Email Signup</a></li>
           </ul>
 	    </div>
 	</nav>
@@ -41,7 +41,7 @@
 
  <div id="container">
  	<div id="child">
- 	<div class="dropdown">
+ <!-- 	<div class="dropdown">
   		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> Search Category <span class="caret"> </span> </button>
 		<ul class="dropdown-menu">
 			<li><a class="categories" data-cat="Charity Event">Charity Event</a></li>
@@ -52,7 +52,7 @@
 		    <li><a class="categories" data-cat="People Helping People">People Helping People</a></li>
 		    <li><a class="categories" data-cat="Volunteering">Volunteering</a></li>
 		</ul>
-	</div>
+	</div> -->
  	<div class="form-group">
     	<input type="text" class="form-control" id="zip-input" placeholder="zip">
   	</div>
@@ -63,15 +63,38 @@
 
  </div>
 
+
+ <div class="container">
+			<div class="card text-white bg-dark mb-3">
+			  	<div class="card-header schedule-header">
+				    Search Results In Your Area
+				</div>
+				<div class="card-body">
+					<table class="table table-striped table-dark table-responsive-sm table-responsive-md search-results-table">
+					  	<thead class="search-results-head">
+						    <tr>
+						       	<th scope="col">Event Name</th>
+						       	<th scope="col">City</th>
+							    <th scope="col">More Info</th>
+						    </tr>
+					   	</thead>
+					  	   		<tbody id="search-results"></tbody>
+					</table>
+				    
+				</div>
+			</div>
+</div>
+
+<!-- <div id="featured-opportunities">Featured Local Opportunities</div>
 <div id="search-results">
 	<table style="width:100%">
-  		<tr>
-    		<th>Group Name</th>
-    		<th>City</th> 
-    		<!-- Button trigger modal -->
-    		<th>
-    			<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal">More info</button>
-    		</th>
+	  		<tr>
+	    		<th>Group Name</th>
+	    		<th>City</th>  -->
+	    		<!-- Button trigger modal -->
+	    	<!-- 	<th> <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal">More info</button></th> -->
+    			
+    		
 
 
 	<!-- Modal -->
@@ -99,8 +122,6 @@
   		
 	</table>
 </div>
-
- <div id="featured-opportunities">Featured Local Opportunities</div>
 
  <div id="footer">
       For the Heart of It
