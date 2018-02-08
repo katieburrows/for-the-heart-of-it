@@ -47,7 +47,7 @@ $(".categories").on("click", function(){
       // clear both search boxes
       // $('#search-submit').empty();
         $('#zip-input').empty();
-        
+        $("#search-submit").val("");
 
     for (var i = 0; i < results.length; i++) {
 
