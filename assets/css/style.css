@@ -104,10 +104,14 @@ nav + div {
     width: 250px;
     display: inline-block;
     text-align: center;
+    background-color: #777;
 }
 #search-submit {
     width: 70px;
     height: 34px;
+    background-color: #777;
+    color: #999;
+    border-radius: 3px;
 } 
 footer {
   padding: 30px 0;
@@ -140,7 +144,7 @@ footer {
     font-weight: bold;
     font-size: 30px;
     text-align: center;
-    width: 
+    border-radius: 3px;
 }
 
 .container {
@@ -155,4 +159,7 @@ footer {
 }
 .schedule-header {
     color: #333;
+}
+.table {
+    border-radius: 10px;
 }
