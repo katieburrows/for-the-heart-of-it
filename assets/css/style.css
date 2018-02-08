@@ -10,6 +10,10 @@
     //volunteer opportunity info
         //name:  contact/date/location
     //map image pulled from google API*/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
 #venue {
     text-align: center;
 }
@@ -26,7 +30,8 @@ color: #333;
 
 
 nav + div {
-    background-image: url(../images/wood-textures/grain3.jpg)
+    background-image: url(../images/wood-textures/grain3.jpg);
+    padding-top: 20px;
 }
 
 .container-fluid {
@@ -46,7 +51,7 @@ nav + div {
 }
 
 .navbar-default .navbar-brand {
-    color: white;
+    color: #333;
     text-transform: uppercase;
 }
 
@@ -144,4 +149,10 @@ footer {
     padding-right: 0px;
     padding-left: 0px;
 
+}
+.navbar-default .navbar-nav>li>a {
+    color: #333;
+}
+.schedule-header {
+    color: #333;
 }
