@@ -7,6 +7,7 @@
     text-align: center;
     background-color: gray;
     width: 600px;
+    height: 100px;
     margin-left: 325px;
     margin-bottom: 30px;
 }
@@ -115,6 +116,9 @@ body {
     border-color: gray;
     color: #111;
 }
+::input-placeholder { /* Chrome/Opera/Safari */
+ color: pink;
+}
 #search-submit {
     width: 70px;
     height: 34px;
@@ -124,7 +128,7 @@ body {
     border-color: gray;
 } .btn-default {
     width: 70px;
-    height: 34px;
+    height: 34px;`
     background-color: red;
     color: #999;
     border-radius: 3px;
