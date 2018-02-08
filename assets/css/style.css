@@ -10,9 +10,14 @@
     //volunteer opportunity info
         //name:  contact/date/location
     //map image pulled from google API*/
-body {
+#venue {
+    text-align: center;
+}
 
-} 
+.center {
+    display: flex;
+    justify-content: center;
+}
 
 nav {
 font-family: 'Raleway', sans-serif;
@@ -39,13 +44,21 @@ nav + div {
     font-size: 40px;
     color: #333;
 }
+
+.navbar-default .navbar-brand {
+    color: white;
+    text-transform: uppercase;
+}
+
 #featured-opportunities {
     font-family: 'Raleway', sans-serif;
     text-align: center;
     background-color: gray;
-    width: 400px;
-    height: 200px;
-    margin-left: 425px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+   /* margin-left: 425px;*/
 
 }
 .parent {
@@ -62,7 +75,7 @@ nav + div {
 }
 
 #container {
-    background-size: 600px 600px;
+    background-size: auto 600px;
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
     background-position: center;
@@ -98,8 +111,10 @@ footer {
   text-align: center;
   background: #A52A2A;
   font-family: 'Raleway', sans-serif;
-  }
+}
+
 #search-results {
+
     background-color: #7C2F30;
     width: 800px;
     margin-left: 200px;
@@ -107,5 +122,26 @@ footer {
     color: #333;
 }
 #more-info-btn {
+
+
+    background-color: white;
+    width: 100%;
+    margin: auto 0;
+  }
+
+.schedule-header {
+    background-color: #A52A2A !important;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    width: 
+}
+
+.container {
+    background-color: white;
+    margin-top: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
 
 }
