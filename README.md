@@ -8,6 +8,7 @@ https://katieburrows.github.io/for-the-heart-of-it/
 ### Built With:
 * HTML
 * CSS
+* Animate.css
 * Bootstrap
 * JavaScript
 * jQuery
